@@ -1,0 +1,23 @@
+{
+  "name": "reactjsbasics",
+  "version": "1.0.0",
+  "description": "My first manual setup enviroment of react",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build":"webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline"
+  },
+  "author": "Dafinka Pechorova",
+  "license": "MIT",
+  "dependencies": {
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.1"
+  }
+}
